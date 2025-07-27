@@ -79,23 +79,19 @@ def main():
                     batch_mask,
                     index_2_type
                 )
-                update_vars = {
-                    'all_correct_num': correct_num,
-                    'all_predict_num': predict_num,
-                    'all_gold_num': gold_num,
-                    'all_correct_nest_num': nest_correct_num,
-                    'all_pred_nest_num': nest_predict_num,
-                    'all_gold_nest_num': nest_gold_num,
-                    'all_correct_out_num': correct_out_num,
-                    'all_out_pred_num': predict_out_num,
-                    'all_out_gold_num': gold_out_num,
-                    'all_correct_in_num': correct_in_num,
-                    'all_in_pred_num': predict_in_num,
-                    'all_in_gold_num': gold_in_num
-                }
-
-                for var_name, value in update_vars.items():
-                    globals()[var_name] += value
+                 all_correct_num += correct_num
+                all_predict_num += predict_num
+                all_gold_num += gold_num
+                all_correct_nest_num += nest_correct_num
+                all_pred_nest_num += nest_predict_num
+                all_gold_nest_num += nest_gold_num
+                all_correct_out_num += correct_out_num
+                all_out_pred_num += predict_out_num
+                all_out_gold_num += gold_out_num
+                all_correct_in_num += correct_in_num
+                all_in_pred_num += predict_in_num
+                all_in_gold_num += gold_in_num
+                
 
             compute_metrics(all_correct_num, all_predict_num, all_gold_num, "实体识别性能", epoch_f1_scores,
                             epoch_precisions, epoch_recalls)
