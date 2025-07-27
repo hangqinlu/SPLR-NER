@@ -1,0 +1,26 @@
+# config.yaml
+
+data:
+  train_path: SPLR/data/科举_train.jsonl
+  val_path: SPLR/data/科举_val.jsonl
+
+
+model:
+  backbone: SIKU-BERT/sikubert
+
+train:
+  epochs: 30
+  batch_size: 1
+  lr: 0.0001
+  seed: 42
+  device: auto
+
+eval:
+  metrics: [f1, precision, recall]
+  eval_interval: 1
+
+logging:
+  log_level: INFO
+  log_dir: ./logs
+
+
