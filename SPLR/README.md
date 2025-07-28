@@ -40,19 +40,28 @@ Despite this progress, most methods still struggle with nested/polysemous entity
 ---
 
 ## Directory Structure
+```text
 SPLR/
+├── SPLR_nested_ner/                     #
+│   ├── __init__.py
+│   ├── dataset.py                 
+│   ├── eval.py              
+│   ├── model.py          
+│   ├── SPLR_data.py       
+│   └── utils.py              # Utility functions
 │
 ├── main.py # Main entry for training and evaluation
-├── SPLR_data.py # Data loading and preprocessing (read_data, build_type_index)
-├── dataset.py # PyTorch dataset and batch collation
-├── model.py # SPLR model architecture
-├── eval.py # Evaluation and metrics computation (report)
-├── utils.py # Utility functions (compute_metrics, etc.)
-├── config.yaml # Project configuration file (paths, params, settings)
+├── .gitignore 
+├── config.yaml
+├── LICENSE
 │
-├── data/ # Data directory (train/val .jsonl files)
+├── data
+│   ├── SPLRtext
+│   ├── 科举_train.jsonl                #
+│   ├── 科举_test.jsonl 
 │
-└── README.md # Project documentation (this file)
+└── README.md 
+```
 
 
 ---
