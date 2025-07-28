@@ -1,8 +1,3 @@
-<p align="center">
-  <img src="image/img.png" alt="SPLR Banner" width="800"/>
-</p>
-
-
 # SPLR: Single-Point and Length Representation Model for Nested NER in Historical Texts
 
 ## Project Overview
@@ -35,6 +30,9 @@ Despite this progress, most methods still struggle with nested/polysemous entity
 
 - **Convolutional Fusion of Length Information:**  
   CNN layers allow the model to distinguish entities of different lengths/spans.
+<p align="center">
+  <img src="image/img.png" alt="SPLR Banner" width="800"/>
+</p>
 
 - **Joint Decoding Strategy:**  
   Predicts entity category and boundary simultaneously for higher efficiency and accuracy.
