@@ -36,6 +36,9 @@ Despite this progress, most methods still struggle with nested/polysemous entity
 
 - **Joint Decoding Strategy:**  
   Predicts entity category and boundary simultaneously for higher efficiency and accuracy.
+<p align="center">
+  <img src="image/img_1.png" alt="SPLR Banner" width="800"/>
+</p>
 
 - **Cost-Sensitive Learning for Imbalanced Data:**  
   Adaptive loss weighting improves learning for rare entity types and long-tail distributions.
