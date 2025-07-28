@@ -40,19 +40,28 @@ Despite this progress, most methods still struggle with nested/polysemous entity
 ---
 
 ## Directory Structure
+```text
 SPLR/
+├── SPLR_nested_ner/                     #
+│   ├── __init__.py
+│   ├── dataset.py                 
+│   ├── eval.py              
+│   ├── model.py          
+│   ├── SPLR_data.py       
+│   └── utils.py              # Utility functions
 │
 ├── main.py # Main entry for training and evaluation
-├── SPLR_data.py # Data loading and preprocessing (read_data, build_type_index)
-├── dataset.py # PyTorch dataset and batch collation
-├── model.py # SPLR model architecture
-├── eval.py # Evaluation and metrics computation (report)
-├── utils.py # Utility functions (compute_metrics, etc.)
-├── config.yaml # Project configuration file (paths, params, settings)
+├── .gitignore 
+├── config.yaml
+├── LICENSE
 │
-├── data/ # Data directory (train/val .jsonl files)
+├── data
+│   ├── SPLRtext
+│   ├── 科举_train.jsonl                #
+│   ├── 科举_test.jsonl 
 │
-└── README.md # Project documentation (this file)
+└── README.md 
+```
 
 
 ---
@@ -125,11 +134,12 @@ python SPLR/main.py
 ## Citation
 If you use this project in your research, please cite our related papers or this repository.
 ``` bibtex
-@misc{splr_ner_2025,
+@misc{lu2025osplr,
   author = {Hangqin Lu},
-  title = {SPLR: Single-Point and Length Representation Model for Nested NER },
+  title = { SPLR: Single-Point and Length Representation Model for Nested NER in Historical Texts},
   year = {2025},
-  howpublished = {\url{https://github.com/HangqinLu/splr-ner}}
+  howpublished = {\url{https://github.com/hangqinlu/SPLR}},
+  note = {GitHub repository (accessed July 2025)}
 }
 ```
 ## License
