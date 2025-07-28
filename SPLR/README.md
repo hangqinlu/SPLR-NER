@@ -100,9 +100,6 @@ logging:
 ### 1. Install Dependencies
 
 Python 3.8+ is recommended. Install required libraries:
-```bash
-pip install torch transformers pyyaml
-```
 ### 2. Prepare Data
 
 Ensure your training and validation datasets are in .jsonl format and referenced in config.yaml (default path: SPLR/data/).
