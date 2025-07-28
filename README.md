@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="image/img.png" alt="SPLR Banner" width="800"/>
+</p>
+
+
 # SPLR: Single-Point and Length Representation Model for Nested NER in Historical Texts
 
 ## Project Overview
