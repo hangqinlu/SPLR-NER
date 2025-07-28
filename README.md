@@ -71,8 +71,8 @@ All file paths and major hyperparameters are set in `config.yaml`:
 
 ```yaml
 data:
-  train_path: C:/Users/卢航青/PycharmProjects/pythonProject11/SPLR/data/科举_train.jsonl
-  val_path: C:/Users/卢航青/PycharmProjects/pythonProject11/SPLR/data/科举_val.jsonl
+  train_path: SPLR/data/科举_train.jsonl
+  val_path: SPLR/data/科举_val.jsonl
 
 
 model:
