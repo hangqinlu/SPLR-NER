@@ -140,13 +140,7 @@ python SPLR/main.py
 ## Citation
 If you use this project in your research, please cite our related papers or this repository.
 ``` bibtex
-@misc{lu2025osplr,
-  author = {Hangqin Lu},
-  title = { SPLR: Single-Point and Length Representation Model for Nested NER in Historical Texts},
-  year = {2025},
-  howpublished = {\url{https://github.com/hangqinlu/SPLR}},
-  note = {GitHub repository (accessed July 2025)}
-}
+https://github.com/hangqinlu/SPLR-NER
 ```
 ## License
 
